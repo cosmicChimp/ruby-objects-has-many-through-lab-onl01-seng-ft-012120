@@ -16,4 +16,6 @@ class Doctor
     Appointment.all.select {|x| x.doctor}
   end
   
+  def new_appointment
+  
 end
