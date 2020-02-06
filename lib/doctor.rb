@@ -12,4 +12,6 @@ class Doctor
     @@all
   end
   
+  Appointment
+  
 end
