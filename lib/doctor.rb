@@ -12,6 +12,8 @@ class Doctor
     @@all
   end
   
-  Appointment
+  def appointments
+    Appointment.all.select {|x| x.doctor}
+  end
   
 end
