@@ -8,6 +8,10 @@ class Patient
     @@all << self
   end
   
+  def appointments
+    Appointment.all.select {|x| x.patient}
+  end
+  
   def new_appointment(doctor, date)
     Appointment.new(date, self, doctor)
   end
