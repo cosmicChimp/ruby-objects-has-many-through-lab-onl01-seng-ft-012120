@@ -20,4 +20,8 @@ class Doctor
     Appointment.new(date, patient, self)
   end
   
+  def patients
+    self.appointments.collect {|x| x.patients}
+  end
+  
 end
